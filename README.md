@@ -1,12 +1,12 @@
-# _{Application Name}_
+# _Currency Exchanger_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Exchange currency all over the world, July 3, 2020_
 
 #### By _**Ben White**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This webpage allows a user to enter an amount of US currency and have it converted to another currency_
 
 ## Setup/Installation Requirements
 
@@ -15,38 +15,45 @@ Software Requirements:
 1. Web Browser
 2. VSCode
 
-Open by downloading:
+API key instructions:
 
-1. Download this repository onto your computer
-2. Double click index.html to open it in your web browser
+1. Go to: https://www.exchangerate-api.com/
+2. Sign up for an account on their site to get your free API key
+3. Copy your API key into the API call line (line 4 of currency-exchanger.js)
 
-Open via Bash/GitBash:
+    * Alternatively, you can make a .env file and assign your key to a variable called API_KEY
 
-1. Clone this repository onto your computer: https://github.com/BenW2140/{project-name}
-2. Navigate into the {project-name} directory in Visual Studio Code or preferred text editor code .
-3. Open index.html in Chrome or preferred browser: open index.html
+Open via npm:
 
-Open using Git Pages:
-
-1. Follow this link: https://BenW2140.github.io/{project-name}
+1. Clone this repository onto your computer: https://github.com/BenW2140/coding-project-6
+2. Navigate into the coding-project-6 directory in Visual Studio Code or preferred text editor code.
+3. Run `npm install` in the terminal to install needed packages
+4. Run `npm start` in the terminal to view webpage
+    
+    * Or you can run `npm run build` in your terminal, and then navigate to the created dist folder and open the index.html file
 
 ## Specs
 
-| |
+Behavior|Input|Output
 ------|------|------
-| |
+The program will allow the user to enter an amount of US currency|15|15
+The program will return the converted amount of currency in Francs|15|14.08
+The program will return the converted amount of currency in Yen|15|1605.67
+The program will return the converted amount of currency in Rupee|15|1123.89
+The program will return the converted amount of currency in Euro|15|13.12
+The program will return the converted amount of currency in Pound|15|11.94
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_No known bugs at this time_
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_Ben White: bwhite2140@outlook.com_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_Git, HTML, CSS, Javascript, Node, Webpack, ExchangeRate-API_
 
 ### License
 

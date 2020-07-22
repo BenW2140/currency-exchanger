@@ -3,9 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Currency Converter</title>
 </head>
 <body>
-  
+  <div class="container">
+    <form id="converter">
+      <div class="form-group">
+        <label for="amount">USD:</label>
+        <input id="amount" class="form-control" type="number" required>
+      </div>
+      <select class="form-control" id="currencies">
+        <option value="CHF">Francs</option>
+        <option value="JPY">Yen</option>
+        <option value="INR">Rupees</option>
+        <option value="EUR">Euros</option>
+        <option value="GBP">Pounds</option>
+      </select>
+      <button type="submit" class="btn">Convert</button>
+    </form>
+    <div id="errors">
+
+    </div>
+    <div id="conversion">
+
+    </div>
+  </div>
 </body>
 </html>
